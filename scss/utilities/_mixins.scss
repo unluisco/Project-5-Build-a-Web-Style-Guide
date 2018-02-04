@@ -1,5 +1,38 @@
-// Create mixins for Media Queries, Flexbox settings and Element and Modifier BEM Selectors.
+@mixin e($element) {
+	&__#{$element} { @content; }
+}
 
-// Flexbox mixin has been used at least once
+@mixin m($modifier) {
+	&--#{$modifier} { @content; }
+}
 
-// Media query mixin is used for all media queries.
+@mixin flex ($display: flex, $dir: null, $wrap: null, $just: null) {
+	display: $display;
+	flex-direction: $dir;
+	flex-wrap: $wrap;
+	justify-content: $just;
+	@content;
+}
+
+//GRID COLOR MIXIN
+@mixin grid-background-color {
+	@each $color in $grid-colors {
+		$index: index($grid-colors, $color);
+
+		&--#{$index}.theme__colors { background-color: $color; }
+	}
+}
+
+//MEDIA QUERY MIXIN
+@mixin mq($break) {
+	@if $break == "small" {
+		@media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) { @content; }
+	}
+	@else if $break == "medium" {
+		@media (min-width: $brkpoint-md) { @content; }
+	}
+	@else if $break == "large" {
+		@media (min-width: $brkpoint-lg) { @content; }
+	}
+	@else { @error "No value could be retrieved for #{$break}"; }
+}
