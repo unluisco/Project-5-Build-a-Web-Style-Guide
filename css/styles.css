@@ -1,3 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+.form__label--hidden {
+  visibility: hidden; }
+
+[class^="btn--"] {
+  width: 100%;
+  padding: 0.75em 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.25em; }
+
+.grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors {
+  padding: 0.95em 0 0.95em 0.9375em;
+  font-family: "Lato", sans-serif;
+  border: none;
+  border-radius: 0.3125em;
+  color: #808080;
+  font-weight: 700; }
+
+.nav {
+  text-align: center; }
+
+.nav__item a {
+  text-decoration: none; }
+
+.container, .card p, .img--logo, .img--avatar {
+  margin: 0 auto; }
+
+.card p {
+  padding: 0.9375em; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
 	 ========================================================================== */
@@ -6,7 +44,6 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 html {
   line-height: 1.15;
   /* 1 */
@@ -400,43 +437,6 @@ p {
   line-height: 25px;
   font-size: 14px; }
 
-.form__label--hidden {
-  visibility: hidden; }
-
-[class^="btn--"] {
-  width: 100%;
-  padding: 0.75em 0;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  border: none;
-  border-radius: 5px;
-  color: #FFF;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.25em; }
-
-.grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors {
-  padding: 0.95em 0 0.95em 0.9375em;
-  font-family: "Lato", sans-serif;
-  border: none;
-  border-radius: 0.3125em;
-  color: #808080;
-  font-weight: 700; }
-
-.nav {
-  text-align: center; }
-
-.nav__item a {
-  text-decoration: none; }
-
-.container, .card p, .img--logo, .img--avatar {
-  margin: 0 auto; }
-
-.card p {
-  padding: 0.9375em; }
-
 .nav {
   padding: 0 0 4.375em;
   margin: 0; }
@@ -468,7 +468,6 @@ p {
   margin-top: 0;
   margin-bottom: 0.9375em;
   padding-left: 0.9375em; }
-
 .headline--secondary {
   font-size: 1.25em;
   font-weight: 300;
@@ -501,12 +500,10 @@ p {
 .img--logo {
   display: block;
   padding: 2.5em 0; }
-
 .img--frame {
   width: 100%;
   padding: 0.9375em;
   border: solid 1px #d9d9d9; }
-
 .img--avatar {
   display: block;
   padding: 1.5625em 0; }
@@ -525,19 +522,14 @@ p {
 
 .btn--default {
   margin-top: 1.875em; }
-
 .btn--success.theme__colors {
   background: #50C878; }
-
 .btn--error.theme__colors {
   background: #DA5652; }
-
 .btn--warning.theme__colors {
   background: #F4621A; }
-
 .btn--info.theme__colors {
   background: #8451A9; }
-
 .btn--default.theme__colors {
   background: #3DDBDB; }
 
@@ -664,29 +656,39 @@ p {
 @media (min-width: 768px) {
   .grid__col--1 {
     width: 6.5%; }
+
   .grid__col--2 {
     width: 15%; }
+
   .grid__col--3 {
     width: 23.5%; }
+
   .grid__col--4 {
     width: 32%; }
+
   .grid__col--5 {
     width: 40.5%; }
+
   .grid__col--6 {
     width: 49%; }
+
   .grid__col--7 {
     width: 57.5%; }
+
   .grid__col--8 {
     width: 66%; }
+
   .grid__col--9 {
     width: 74.5%; }
+
   .grid__col--10 {
     width: 83%; }
+
   .grid__col--11 {
     width: 91.5%; }
+
   .grid__col--12 {
     width: 100%; } }
-
 @media (min-width: 768px) {
   .grid__row {
     display: flex;
@@ -694,40 +696,28 @@ p {
     .grid__row .centered {
       display: block;
       margin: auto; } }
-
 .grid__col--1.theme__colors {
   background-color: #50C878; }
-
 .grid__col--2.theme__colors {
   background-color: #28DCB8; }
-
 .grid__col--3.theme__colors {
   background-color: #D3A2F6; }
-
 .grid__col--4.theme__colors {
   background-color: #56DEF5; }
-
 .grid__col--5.theme__colors {
   background-color: #51BA4F; }
-
 .grid__col--6.theme__colors {
   background-color: #146FA3; }
-
 .grid__col--7.theme__colors {
   background-color: #DF6F6D; }
-
 .grid__col--8.theme__colors {
   background-color: #E59061; }
-
 .grid__col--9.theme__colors {
   background-color: #F4621A; }
-
 .grid__col--10.theme__colors {
   background-color: #DA5652; }
-
 .grid__col--11.theme__colors {
   background-color: #8451A9; }
-
 .grid__col--12.theme__colors {
   background-color: #8FF0CB; }
 
@@ -736,3 +726,5 @@ p {
     display: flex; }
     .grid__col--12 .theme__colors {
       margin: 1.875em 1em; } }
+
+/*# sourceMappingURL=styles.css.map */
